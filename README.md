@@ -21,3 +21,9 @@ Jest to projekt zawierający część kliencką - do przesyłania programów do 
 7. Jeśli serwer nie jest zajęty wybiera następny program z kolejki i przesyła informację o zmienionym stanie kolejki wszystkim klientom.
 8. Serwer wykonuje program i przesyła wynik do klienta.
 9. Klient dostaje informację o zakończeniu wykonywania i odbiera wynik.
+
+## Kompilacja i uruchomienie
+
+Do kompilacji służą pliki build, pliki wynikowe to client.exe i server.exe.
+
+Możliwe jest użycie również (w edytorze VS Code) tasków - "Run Development" kompiluje i uruchamia zarówno serwer jak i klienta.

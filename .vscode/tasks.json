@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build client",
+			"command": "./build_client.sh",
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "Run server",
+			"command": "./server.exe",
+			"group": "test",
+			"presentation": {
+				"panel": "dedicated"
+			},
+			"dependsOn": [
+				"Build server"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "Build server",
+			"command": "./build_server.sh",
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "Run client",
+			"command": "./client.exe",
+			"group": "test",
+			"presentation": {
+				"panel": "dedicated"
+			},
+			"dependsOn": [
+				"Build client"
+			]
+		},
+		{
+			"label": "Run Development",
+			"dependsOrder": "parallel",
+			"dependsOn": [
+				"Run server",
+				"Run client"
+			],
+			"problemMatcher": []
+		}
+	]
+}

@@ -1,0 +1,1 @@
+g++ ./src/common.cpp ./inc/common.hpp ./inc/server/* ./src/server/* -o server.exe;
