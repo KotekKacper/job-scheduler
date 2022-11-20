@@ -9,6 +9,7 @@ Jest to projekt zawierający część kliencką - do przesyłania programów do 
 - klient może wysyłać wiele programów, na raz lub w różnych momentach
 - klient ma podgląd ile programów jest aktualnie w kolejce do wykonywania i ilu jest aktywnych klientów
 - klient dostaje informacje o stanie wysłanych przez siebie programów (miejsce w kolejce/wykonywany)
+- klient może anulować wykonanie programu w dowolnym momencie
 
 ## Przykładowy przypadek użycia
 1. Klient łączy się z serwerem.
